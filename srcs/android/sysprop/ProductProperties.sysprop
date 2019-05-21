@@ -12,23 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+module: "android.sysprop.ProductProperties"
 owner: Platform
-module: "android.sysprop.TraceProperties"
-
 prop {
-    api_name: "user_initiated"
+    api_name: "unbundled_apps"
     type: Boolean
     scope: Internal
-    access: ReadWrite
-    prop_name: "debug.atrace.user_initiated"
-    integer_as_bool : true
-}
-
-prop {
-    api_name: "enable"
-    type: Boolean
-    scope: Internal
-    access: ReadWrite
-    prop_name: "persist.traced.enable"
-    integer_as_bool : true
+    access: Readonly
+    prop_name: "ro.product.apps.unbundled"
 }
