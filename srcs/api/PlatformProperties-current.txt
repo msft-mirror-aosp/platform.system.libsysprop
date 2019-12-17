@@ -8,6 +8,15 @@ props {
   }
 }
 props {
+  module: "android.sysprop.ApkVerityProperties"
+  prop {
+    api_name: "apk_verity_mode"
+    type: Integer
+    access: Writeonce
+    prop_name: "ro.apk_verity.mode"
+  }
+}
+props {
   module: "android.sysprop.CarProperties"
   prop {
     api_name: "boot_user_override_id"
@@ -103,6 +112,15 @@ props {
     access: ReadWrite
     scope: Internal
     prop_name: "debug.egl.trace"
+  }
+}
+props {
+  module: "android.sysprop.OtaProperties"
+  prop {
+    api_name: "warm_reset"
+    access: ReadWrite
+    prop_name: "ota.warm_reset"
+    integer_as_bool: true
   }
 }
 props {
