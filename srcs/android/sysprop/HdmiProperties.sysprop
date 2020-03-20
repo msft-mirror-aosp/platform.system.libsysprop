@@ -12,12 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-module: "android.sysprop.ProductProperties"
 owner: Platform
+module: "android.sysprop.HdmiProperties"
+
+# OEM should override this property
+# Values denotes the device type in HDMI Spec 1.4.
 prop {
-    api_name: "unbundled_apps"
-    type: Boolean
+    api_name: "device_type"
+    type: IntegerList
     scope: Internal
     access: Readonly
-    prop_name: "ro.product.apps.unbundled"
+    prop_name: "ro.hdmi.device_type"
 }
