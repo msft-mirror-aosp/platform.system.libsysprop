@@ -129,6 +129,20 @@ props {
   }
 }
 props {
+  module: "android.sysprop.HdmiProperties"
+  prop {
+    api_name: "device_type"
+    type: IntegerList
+    scope: Internal
+    prop_name: "ro.hdmi.device_type"
+  }
+  prop {
+    api_name: "set_menu_language"
+    scope: Internal
+    prop_name: "ro.hdmi.set_menu_language"
+  }
+}
+props {
   module: "android.sysprop.OtaProperties"
   prop {
     api_name: "warm_reset"
@@ -348,6 +362,11 @@ props {
   prop {
     api_name: "ril_sends_multiple_call_ring"
     prop_name: "ro.telephony.call_ring.multiple"
+  }
+  prop {
+    api_name: "sim_slots_count"
+    type: Integer
+    prop_name: "ro.telephony.sim_slots.count"
   }
   prop {
     api_name: "sim_state"
