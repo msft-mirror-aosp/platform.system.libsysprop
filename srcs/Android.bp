@@ -13,9 +13,7 @@
 // limitations under the License.
 //
 
-sysprop_library {
-    name: "PlatformProperties",
+filegroup {
+    name: "platform-properties",
     srcs: ["**/*.sysprop"],
-    property_owner: "Platform",
-    api_packages: ["android.sysprop"],
 }
