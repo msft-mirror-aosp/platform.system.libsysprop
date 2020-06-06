@@ -72,3 +72,32 @@ prop {
     access: Readonly
     prop_name: "ro.hdmi.cec.source.is_switch.enabled."
 }
+
+# Determines playback device action upon receiving routing control messages.
+# <ul>
+# <li><b>none</b> No action taken.
+# <li><b>wake_up_only</b> PowerManager.wakeUp() is called.
+# <li><b>wake_up_and_send_active_source</b> Same as above and additionally <Active Source> is sent.
+# </ul>
+prop {
+    api_name: "playback_device_action_on_routing_control"
+    type: Enum
+    scope: Internal
+    access: Readonly
+    enum_values: "none|wake_up_only|wake_up_and_send_active_source"
+    prop_name: "ro.hdmi.cec.source.playback_device_action_on_routing_control"
+}
+
+# Determines behaviour of the device when <Active Source> is lost.
+# <ul>
+# <li><b>none</b> No power state change.
+# <li><b>standby_now</b> PowerManager.goToSleep() is called.
+# </ul>
+prop {
+    api_name: "power_state_change_on_active_source_lost"
+    type: Enum
+    scope: Internal
+    access: Readonly
+    enum_values: "none|standby_now"
+    prop_name: "ro.hdmi.cec.source.power_state_change_on_active_source_lost"
+}
