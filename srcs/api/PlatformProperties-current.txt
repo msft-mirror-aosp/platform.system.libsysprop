@@ -46,12 +46,6 @@ props {
     prop_name: "ro.android.car.trusteddevice.device_name_prefix"
   }
   prop {
-    api_name: "user_hal_enabled"
-    access: ReadWrite
-    scope: Internal
-    prop_name: "android.car.user_hal_enabled"
-  }
-  prop {
     api_name: "user_hal_timeout"
     type: Integer
     access: ReadWrite
@@ -233,6 +227,12 @@ props {
 }
 props {
   module: "android.sysprop.PowerProperties"
+  prop {
+    api_name: "battery_input_suspended"
+    access: ReadWrite
+    scope: Internal
+    prop_name: "power.battery_input.suspended"
+  }
   prop {
     api_name: "fixed_performance_scale_factor"
     type: Integer
