@@ -12,14 +12,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+module: "android.sysprop.MediaProperties"
 owner: Platform
-module: "android.sysprop.TraceProperties"
-
 prop {
-    api_name: "user_initiated"
-    type: Boolean
-    scope: Internal
-    access: ReadWrite
-    prop_name: "debug.atrace.user_initiated"
-    integer_as_bool : true
+    api_name: "swcodec_ion_heapmask"
+    type: Integer
+    access: Readonly
+    scope: Public
+    prop_name: "ro.com.android.media.swcodec.ion.heapmask"
 }
+prop {
+    api_name: "swcodec_ion_align"
+    type: Integer
+    access: Readonly
+    scope: Public
+    prop_name: "ro.com.android.media.swcodec.ion.align"
+}
+prop {
+    api_name: "swcodec_ion_flags"
+    type: Integer
+    access: Readonly
+    scope: Public
+    prop_name: "ro.com.android.media.swcodec.ion.flags"
+}
+

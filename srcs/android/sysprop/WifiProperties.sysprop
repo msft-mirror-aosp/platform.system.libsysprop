@@ -13,13 +13,22 @@
 # limitations under the License.
 
 owner: Platform
-module: "android.sysprop.TraceProperties"
+module: "android.sysprop.WifiProperties"
 
+# Start the supplicant daemon.
 prop {
-    api_name: "user_initiated"
+    api_name: "start_supplicant"
     type: Boolean
-    scope: Internal
-    access: ReadWrite
-    prop_name: "debug.atrace.user_initiated"
-    integer_as_bool : true
+    scope: Public
+    access: Writeonce
+    prop_name: "ctl.start$supplicant"
+}
+
+# Stop the supplicant daemon.
+prop {
+    api_name: "stop_supplicant"
+    type: Boolean
+    scope: Public
+    access: Writeonce
+    prop_name: "ctl.stop$supplicant"
 }
