@@ -1,4 +1,4 @@
-# Copyright (C) 2020 The Android Open Source Project
+# Copyright (C) 2021 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,16 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# This property is used to enable the keystore2 daemon and the Keystore 2.0
-# provider during a transitional phase untill Keystore 2.0 is the default.
-# TODO Remove when the migration to Keystore 2.0 is complete. b/171563717
-owner: Platform
-module: "android.sysprop.Keystore2Properties"
+module: "android.sysprop.DeviceProperties"
+owner: Odm
+
+# The media performance class of the device.
 prop {
-    api_name: "keystore2_enabled"
-    type: Boolean
-    prop_name: "persist.android.security.keystore2.enable"
-    scope: Internal
-    access: ReadWrite
-    integer_as_bool: true
+    api_name: "media_performance_class"
+    type: Integer
+    scope: Public
+    access: Readonly
+    prop_name: "ro.odm.build.media_performance_class"
 }
