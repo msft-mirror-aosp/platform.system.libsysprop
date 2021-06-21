@@ -1,4 +1,4 @@
-# Copyright (C) 2019 The Android Open Source Project
+# Copyright (C) 2021 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,14 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-owner: Platform
-module: "android.sysprop.TraceProperties"
+module: "android.sysprop.DeviceProperties"
+owner: Odm
 
+# The media performance class of the device.
 prop {
-    api_name: "user_initiated"
-    type: Boolean
-    scope: Internal
-    access: ReadWrite
-    prop_name: "debug.atrace.user_initiated"
-    integer_as_bool : true
+    api_name: "media_performance_class"
+    type: Integer
+    scope: Public
+    access: Readonly
+    prop_name: "ro.odm.build.media_performance_class"
 }
