@@ -1,4 +1,4 @@
-# Copyright (C) 2019 The Android Open Source Project
+# Copyright (C) 2020 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,14 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+module: "android.sysprop.NetworkProperties"
 owner: Platform
-module: "android.sysprop.TraceProperties"
 
 prop {
-    api_name: "user_initiated"
-    type: Boolean
-    scope: Internal
+    api_name: "tcp_init_rwnd"
+    type: Integer
+    scope: Public
     access: ReadWrite
-    prop_name: "debug.atrace.user_initiated"
-    integer_as_bool : true
+    prop_name: "net.tcp_def_init_rwnd"
+}
+
+prop {
+    api_name: "isCellular464XlatEnabled"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "net.464xlat.cellular.enabled"
 }
