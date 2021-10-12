@@ -17,11 +17,24 @@ props {
   }
 }
 props {
+  module: "android.sysprop.HypervisorProperties"
+  prop {
+    api_name: "hypervisor_version"
+    type: String
+    prop_name: "ro.boot.hypervisor.version"
+  }
+}
+props {
   module: "android.sysprop.MediaProperties"
   prop {
     api_name: "codec2_dmabuf_padding"
     type: Integer
     prop_name: "media.c2.dmabuf.padding"
+  }
+  prop {
+    api_name: "resolution_limit_32bit"
+    type: Integer
+    prop_name: "media.resolution.limit.32bit"
   }
   prop {
     api_name: "swcodec_ion_align"
