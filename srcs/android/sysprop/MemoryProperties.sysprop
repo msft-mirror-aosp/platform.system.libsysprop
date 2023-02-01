@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The Android Open Source Project
+# Copyright (C) 2022 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,26 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-module: "android.sysprop.VoldProperties"
 owner: Platform
+module: "android.sysprop.MemoryProperties"
+
+# Provides the hardware memory ddr size. This property is populated by
+# the property service from the kernel command line parameter
+# androidboot.ddr_size=XXXX. Vendors can set this command line option
+# from the bootloader.
+# This value is usually different from MemTotal in /proc/meminfo.
 prop {
-    api_name: "decrypt"
+    api_name: "memory_ddr_size"
     type: String
-    scope: Internal
-    access: ReadWrite
-    prop_name: "vold.decrypt"
-}
-prop {
-    api_name: "encrypt_progress"
-    type: String
-    scope: Internal
-    access: ReadWrite
-    prop_name: "vold.encrypt_progress"
-}
-prop {
-    api_name: "encrypt_time_remaining"
-    type: Integer
-    scope: Internal
-    access: ReadWrite
-    prop_name: "vold.encrypt_time_remaining"
+    scope: Public
+    access: Readonly
+    prop_name: "ro.boot.ddr_size"
 }
