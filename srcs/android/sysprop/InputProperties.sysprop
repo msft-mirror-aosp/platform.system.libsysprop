@@ -92,7 +92,6 @@ prop {
     prop_name: "persist.input.keyboard.backlight_custom_levels.enabled"
 }
 
-
 # A flag to enable ALS based keyboard backlight control introduced in Android U-QPR1.
 prop {
     api_name: "enable_ambient_keyboard_backlight_control"
@@ -100,4 +99,13 @@ prop {
     scope: Internal
     access: Readonly
     prop_name: "persist.input.keyboard.ambient_backlight_control.enabled"
+}
+
+# A flag to enable the refactoring of PointerController into PointerChoreographer.
+prop {
+    api_name: "enable_pointer_choreographer"
+    type: Boolean
+    scope: Internal
+    access: Readonly
+    prop_name: "persist.input.enable_pointer_choreographer"
 }
