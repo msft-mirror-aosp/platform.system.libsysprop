@@ -319,6 +319,11 @@ props {
     prop_name: "persist.nfc.debug_enabled"
   }
   prop {
+    api_name: "initialized"
+    access: ReadWrite
+    prop_name: "nfc.initialized"
+  }
+  prop {
     api_name: "skipNdefRead"
     prop_name: "nfc.dta.skip_ndef_read"
     legacy_prop_name: "nfc.dta.skipNdefRead"
