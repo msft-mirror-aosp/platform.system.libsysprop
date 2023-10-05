@@ -502,6 +502,16 @@ prop {
     prop_name: "bluetooth.profile.pbap.server.enabled"
 }
 
+# Whether the Phonebook Access Profile (PBAP)'s SIM feature is enabled on this device.
+# Set by vendors overlay, read at Bluetooth initialization
+prop {
+    api_name: "isProfilePbapSimEnabled"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.profile.pbap.sim.enabled"
+}
+
 # Whether the SIM Access Profile (SAP) server is enabled on this device.
 # Set by vendors overlay, read at Bluetooth initialization
 prop {
