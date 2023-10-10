@@ -176,6 +176,10 @@ props {
     prop_name: "bluetooth.profile.pbap.server.enabled"
   }
   prop {
+    api_name: "isProfilePbapSimEnabled"
+    prop_name: "bluetooth.profile.pbap.sim.enabled"
+  }
+  prop {
     api_name: "isProfileSapServerEnabled"
     prop_name: "bluetooth.profile.sap.server.enabled"
   }
