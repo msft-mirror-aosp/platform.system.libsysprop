@@ -49,3 +49,11 @@ prop {
     scope: Public
     prop_name: "media.resolution.limit.32bit"
 }
+prop {
+    api_name: "codec2_hal_selection"
+    type: Enum
+    enum_values: "aidl|hidl"
+    access: Readonly
+    scope: Public
+    prop_name: "media.c2.hal.selection"
+}
