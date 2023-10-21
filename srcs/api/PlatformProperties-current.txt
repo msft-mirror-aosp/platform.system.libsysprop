@@ -274,6 +274,12 @@ props {
     prop_name: "media.c2.dmabuf.padding"
   }
   prop {
+    api_name: "codec2_hal_selection"
+    type: Enum
+    prop_name: "media.c2.hal.selection"
+    enum_values: "aidl|hidl"
+  }
+  prop {
     api_name: "resolution_limit_32bit"
     type: Integer
     prop_name: "media.resolution.limit.32bit"
