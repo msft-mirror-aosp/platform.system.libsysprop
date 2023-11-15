@@ -16,13 +16,12 @@ module: "android.sysprop.InputProperties"
 owner: Platform
 
 # A debug flag that converts all touch pointers to stylus pointers.
-# Requires a reboot to take effect.
 prop {
     api_name: "simulate_stylus_with_touch"
     type: Boolean
     scope: Internal
     access: Readonly
-    prop_name: "persist.debug.input.simulate_stylus_with_touch"
+    prop_name: "debug.input.simulate_stylus_with_touch"
 }
 
 # A flag to enable the new touchpad input mapper introduced in Android U, based around the ChromeOS
