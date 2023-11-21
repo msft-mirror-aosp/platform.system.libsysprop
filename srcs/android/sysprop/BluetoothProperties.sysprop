@@ -757,6 +757,19 @@ prop {
     prop_name: "bluetooth.core.le.vendor_capabilities.enabled"
 }
 
+# list of supported HID transport protocols for IMU data over LE Audio by order of preferrence
+# Comma separated list of:
+# - "le-acl": LE ACL transport, the IMU data is reported via the sensor stack
+# - "iso-sw": ISO transport, the IMU data is reported via the sensor stack
+# - "iso-hw": ISO transport, the IMU data is tunneled to the Spatializer in the ADSP
+prop {
+    api_name: "dsa_transport_preference"
+    type: StringList
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.core.le.dsa_transport_preference"
+}
+
 # Used to disable enhanced SCO connection
 prop {
     api_name: "getDisableEnchancedConnection"
