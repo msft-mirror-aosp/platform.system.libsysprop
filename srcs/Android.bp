@@ -32,6 +32,7 @@ sysprop_library {
         "com.android.media.swcodec",
         "com.android.tethering",
         "com.android.virt",
+        "com.android.wifi",
     ],
     cpp: {
         min_sdk_version: "S",
