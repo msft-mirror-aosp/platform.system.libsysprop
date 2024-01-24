@@ -475,6 +475,14 @@ props {
   }
 }
 props {
+  module: "android.sysprop.ThreadNetworkProperties"
+  prop {
+    api_name: "country_code"
+    type: String
+    prop_name: "threadnetwork.country_code"
+  }
+}
+props {
   module: "android.sysprop.VndkProperties"
   prop {
     api_name: "product_vndk_version"
