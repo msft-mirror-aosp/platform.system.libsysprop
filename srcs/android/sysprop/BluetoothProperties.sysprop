@@ -778,3 +778,13 @@ prop {
     access: Readonly
     prop_name: "bluetooth.sco.disable_enhanced_connection"
 }
+
+# Whether Bluetooth HFP SCO managed by Audio.
+# Set by vendors overlay, read at Bluetooth initialization
+prop {
+    api_name: "isScoManagedByAudioEnabled"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.sco.managed_by_audio"
+}
