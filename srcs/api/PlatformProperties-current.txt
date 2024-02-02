@@ -193,6 +193,10 @@ props {
     prop_name: "bluetooth.profile.vcp.controller.enabled"
   }
   prop {
+    api_name: "isScoManagedByAudioEnabled"
+    prop_name: "bluetooth.sco.managed_by_audio"
+  }
+  prop {
     api_name: "isSupportPersistedStateEnabled"
     prop_name: "bluetooth.framework.support_persisted_state"
   }
