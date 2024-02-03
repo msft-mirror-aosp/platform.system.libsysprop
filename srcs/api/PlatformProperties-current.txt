@@ -193,6 +193,10 @@ props {
     prop_name: "bluetooth.profile.vcp.controller.enabled"
   }
   prop {
+    api_name: "isScoManagedByAudioEnabled"
+    prop_name: "bluetooth.sco.managed_by_audio"
+  }
+  prop {
     api_name: "isSupportPersistedStateEnabled"
     prop_name: "bluetooth.framework.support_persisted_state"
   }
@@ -472,6 +476,14 @@ props {
     api_name: "wake_lock_timeout"
     type: Integer
     prop_name: "ro.ril.wake_lock_timeout"
+  }
+}
+props {
+  module: "android.sysprop.ThreadNetworkProperties"
+  prop {
+    api_name: "country_code"
+    type: String
+    prop_name: "threadnetwork.country_code"
   }
 }
 props {
