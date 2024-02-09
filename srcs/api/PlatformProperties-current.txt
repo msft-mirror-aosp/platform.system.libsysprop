@@ -65,6 +65,11 @@ props {
     prop_name: "bluetooth.hardware.power.tx_cur_ma"
   }
   prop {
+    api_name: "getLeMaxNumberOfConcurrentConnections"
+    type: UInt
+    prop_name: "bluetooth.core.le.max_number_of_concurrent_connections"
+  }
+  prop {
     api_name: "isAdapterAddressValidationEnabled"
     prop_name: "bluetooth.framework.adapter_address_validation"
   }
