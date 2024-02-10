@@ -757,6 +757,15 @@ prop {
     prop_name: "bluetooth.core.le.vendor_capabilities.enabled"
 }
 
+# Maximum number of number of allowed concurrent LE Connections
+prop {
+    api_name: "getLeMaxNumberOfConcurrentConnections"
+    type: UInt
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.core.le.max_number_of_concurrent_connections"
+}
+
 # list of supported HID transport protocols for IMU data over LE Audio by order of preferrence
 # Comma separated list of:
 # - "le-acl": LE ACL transport, the IMU data is reported via the sensor stack
