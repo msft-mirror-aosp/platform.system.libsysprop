@@ -28,8 +28,11 @@ sysprop_library {
         "com.android.art",
         "com.android.art.debug",
         "com.android.btservices",
+        "com.android.nfcservices",
+        "com.android.media.swcodec",
         "com.android.tethering",
         "com.android.virt",
+        "com.android.wifi",
     ],
     cpp: {
         min_sdk_version: "S",
