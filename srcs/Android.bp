@@ -28,6 +28,7 @@ sysprop_library {
         "com.android.art",
         "com.android.art.debug",
         "com.android.btservices",
+        "com.android.compos",
         "com.android.nfcservices",
         "com.android.media.swcodec",
         "com.android.tethering",
