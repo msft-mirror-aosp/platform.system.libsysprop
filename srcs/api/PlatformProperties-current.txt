@@ -505,6 +505,14 @@ props {
   }
 }
 props {
+  module: "android.sysprop.WidevineProperties"
+  prop {
+    api_name: "forcel3_enabled"
+    access: ReadWrite
+    prop_name: "persist.drm.forcel3.enabled"
+  }
+}
+props {
   module: "android.sysprop.WifiProperties"
   prop {
     api_name: "start_supplicant"
