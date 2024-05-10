@@ -502,6 +502,16 @@ prop {
     prop_name: "bluetooth.profile.pbap.server.enabled"
 }
 
+# Whether the Phonebook Access Profile (PBAP)'s SIM feature is enabled on this device.
+# Set by vendors overlay, read at Bluetooth initialization
+prop {
+    api_name: "isProfilePbapSimEnabled"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.profile.pbap.sim.enabled"
+}
+
 # Whether the SIM Access Profile (SAP) server is enabled on this device.
 # Set by vendors overlay, read at Bluetooth initialization
 prop {
@@ -747,6 +757,28 @@ prop {
     prop_name: "bluetooth.core.le.vendor_capabilities.enabled"
 }
 
+# Maximum number of number of allowed concurrent LE Connections
+prop {
+    api_name: "getLeMaxNumberOfConcurrentConnections"
+    type: UInt
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.core.le.max_number_of_concurrent_connections"
+}
+
+# list of supported HID transport protocols for IMU data over LE Audio by order of preferrence
+# Comma separated list of:
+# - "le-acl": LE ACL transport, the IMU data is reported via the sensor stack
+# - "iso-sw": ISO transport, the IMU data is reported via the sensor stack
+# - "iso-hw": ISO transport, the IMU data is tunneled to the Spatializer in the ADSP
+prop {
+    api_name: "dsa_transport_preference"
+    type: StringList
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.core.le.dsa_transport_preference"
+}
+
 # Used to disable enhanced SCO connection
 prop {
     api_name: "getDisableEnchancedConnection"
@@ -754,4 +786,14 @@ prop {
     scope: Internal
     access: Readonly
     prop_name: "bluetooth.sco.disable_enhanced_connection"
+}
+
+# Whether Bluetooth HFP SCO managed by Audio.
+# Set by vendors overlay, read at Bluetooth initialization
+prop {
+    api_name: "isScoManagedByAudioEnabled"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.sco.managed_by_audio"
 }

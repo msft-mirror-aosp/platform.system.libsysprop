@@ -1,4 +1,4 @@
-# Copyright (C) 2018 The Android Open Source Project
+# Copyright (C) 2024 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,26 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-module: "android.sysprop.VoldProperties"
 owner: Platform
+module: "android.sysprop.ThreadNetworkProperties"
+
 prop {
-    api_name: "decrypt"
+    api_name: "country_code"
     type: String
-    scope: Internal
-    access: ReadWrite
-    prop_name: "vold.decrypt"
-}
-prop {
-    api_name: "encrypt_progress"
-    type: String
-    scope: Internal
-    access: ReadWrite
-    prop_name: "vold.encrypt_progress"
-}
-prop {
-    api_name: "encrypt_time_remaining"
-    type: Integer
-    scope: Internal
-    access: ReadWrite
-    prop_name: "vold.encrypt_time_remaining"
+    prop_name: "threadnetwork.country_code"
+    scope: Public
+    access: Readonly
 }

@@ -10,6 +10,11 @@ props {
 props {
   module: "android.sysprop.BluetoothProperties"
   prop {
+    api_name: "dsa_transport_preference"
+    type: StringList
+    prop_name: "bluetooth.core.le.dsa_transport_preference"
+  }
+  prop {
     api_name: "factory_reset"
     access: ReadWrite
     prop_name: "persist.bluetooth.factoryreset"
@@ -58,6 +63,11 @@ props {
     api_name: "getHardwareTxCurrentMa"
     type: Integer
     prop_name: "bluetooth.hardware.power.tx_cur_ma"
+  }
+  prop {
+    api_name: "getLeMaxNumberOfConcurrentConnections"
+    type: UInt
+    prop_name: "bluetooth.core.le.max_number_of_concurrent_connections"
   }
   prop {
     api_name: "isAdapterAddressValidationEnabled"
@@ -176,12 +186,20 @@ props {
     prop_name: "bluetooth.profile.pbap.server.enabled"
   }
   prop {
+    api_name: "isProfilePbapSimEnabled"
+    prop_name: "bluetooth.profile.pbap.sim.enabled"
+  }
+  prop {
     api_name: "isProfileSapServerEnabled"
     prop_name: "bluetooth.profile.sap.server.enabled"
   }
   prop {
     api_name: "isProfileVcpControllerEnabled"
     prop_name: "bluetooth.profile.vcp.controller.enabled"
+  }
+  prop {
+    api_name: "isScoManagedByAudioEnabled"
+    prop_name: "bluetooth.sco.managed_by_audio"
   }
   prop {
     api_name: "isSupportPersistedStateEnabled"
@@ -270,6 +288,12 @@ props {
     prop_name: "media.c2.dmabuf.padding"
   }
   prop {
+    api_name: "codec2_hal_selection"
+    type: Enum
+    prop_name: "media.c2.hal.selection"
+    enum_values: "aidl|hidl"
+  }
+  prop {
     api_name: "resolution_limit_32bit"
     type: Integer
     prop_name: "media.resolution.limit.32bit"
@@ -317,6 +341,11 @@ props {
     api_name: "debug_enabled"
     access: ReadWrite
     prop_name: "persist.nfc.debug_enabled"
+  }
+  prop {
+    api_name: "initialized"
+    access: ReadWrite
+    prop_name: "nfc.initialized"
   }
   prop {
     api_name: "skipNdefRead"
@@ -455,6 +484,14 @@ props {
   }
 }
 props {
+  module: "android.sysprop.ThreadNetworkProperties"
+  prop {
+    api_name: "country_code"
+    type: String
+    prop_name: "threadnetwork.country_code"
+  }
+}
+props {
   module: "android.sysprop.VndkProperties"
   prop {
     api_name: "product_vndk_version"
@@ -465,6 +502,14 @@ props {
     api_name: "vendor_vndk_version"
     type: String
     prop_name: "ro.vndk.version"
+  }
+}
+props {
+  module: "android.sysprop.WidevineProperties"
+  prop {
+    api_name: "forcel3_enabled"
+    access: ReadWrite
+    prop_name: "persist.drm.forcel3.enabled"
   }
 }
 props {
