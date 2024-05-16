@@ -147,6 +147,14 @@ prop {
     prop_name: "bluetooth.core.le_audio.inband_ringtone.supported"
 }
 
+prop {
+    api_name: "isLeAudioCodecExtensionAidlEnabled"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.core.le_audio.codec_extension_aidl.enabled"
+}
+
 # The default name of the device.
 # Set by vendors overlay, read at Bluetooth initialization
 prop {
