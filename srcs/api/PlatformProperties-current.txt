@@ -15,6 +15,11 @@ props {
     prop_name: "bluetooth.core.le.dsa_transport_preference"
   }
   prop {
+    api_name: "enable_sniff_offload"
+    prop_name: "bluetooth.sniff_offload.enabled"
+    integer_as_bool: true
+  }
+  prop {
     api_name: "factory_reset"
     access: ReadWrite
     prop_name: "persist.bluetooth.factoryreset"
