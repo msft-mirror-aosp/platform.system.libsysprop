@@ -16,7 +16,7 @@ props {
   }
   prop {
     api_name: "enable_sniff_offload"
-    prop_name: "bluetooth.sniff_offload.enabled"
+    prop_name: "persist.bluetooth.sniff_offload.enabled"
     integer_as_bool: true
   }
   prop {
