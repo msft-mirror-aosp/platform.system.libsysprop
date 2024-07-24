@@ -78,6 +78,10 @@ props {
     prop_name: "bluetooth.core.gap.le.privacy.enabled"
   }
   prop {
+    api_name: "isLeAudioCodecExtensionAidlEnabled"
+    prop_name: "bluetooth.core.le_audio.codec_extension_aidl.enabled"
+  }
+  prop {
     api_name: "isLeAudioInbandRingtoneSupported"
     prop_name: "bluetooth.core.le_audio.inband_ringtone.supported"
   }
@@ -502,6 +506,14 @@ props {
     api_name: "vendor_vndk_version"
     type: String
     prop_name: "ro.vndk.version"
+  }
+}
+props {
+  module: "android.sysprop.WidevineProperties"
+  prop {
+    api_name: "forcel3_enabled"
+    access: ReadWrite
+    prop_name: "persist.drm.forcel3.enabled"
   }
 }
 props {
