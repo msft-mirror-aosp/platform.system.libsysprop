@@ -56,3 +56,43 @@ prop {
     access: ReadWrite
     prop_name: "nfc.initialized"
 }
+
+prop {
+    api_name: "info_antpos_X"
+    type: IntegerList
+    scope: Public
+    access: Readonly
+    prop_name: "ro.nfc.info.antpos.X"
+}
+
+prop {
+    api_name: "info_antpos_Y"
+    type: IntegerList
+    scope: Public
+    access: Readonly
+    prop_name: "ro.nfc.info.antpos.Y"
+}
+
+prop {
+    api_name: "info_antpos_device_width"
+    type: Integer
+    scope: Public
+    access: Readonly
+    prop_name: "ro.nfc.info.antpos.device_width"
+}
+
+prop {
+    api_name: "info_antpos_device_height"
+    type: Integer
+    scope: Public
+    access: Readonly
+    prop_name: "ro.nfc.info.antpos.device_height"
+}
+
+prop {
+    api_name: "info_antpos_device_foldable"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "ro.nfc.info.antpos.device_foldable"
+}
