@@ -805,3 +805,13 @@ prop {
     access: Readonly
     prop_name: "bluetooth.sco.managed_by_audio"
 }
+
+# Determine if sniff mode is handled in AP or MCU
+prop {
+    api_name: "enable_sniff_offload"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "persist.bluetooth.sniff_offload.enabled"
+    integer_as_bool: true
+}
