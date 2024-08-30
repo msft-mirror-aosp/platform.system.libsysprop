@@ -98,9 +98,17 @@ prop {
 }
 
 prop {
-    api_name: "info_observe_mode_supported"
+    api_name: "observe_mode_supported"
     type: Boolean
     scope: Public
     access: Readonly
-    prop_name: "ro.nfc.info.observe_mode_supported"
+    prop_name: "ro.nfc.observe_mode_supported"
+}
+
+prop {
+    api_name: "get_caps_supported"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "ro.nfc.get_caps_supported"
 }
