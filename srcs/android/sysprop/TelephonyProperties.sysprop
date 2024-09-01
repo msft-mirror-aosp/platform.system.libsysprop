@@ -312,7 +312,7 @@ prop {
 
 #
 # Set to false to disable SMS receiving, default is
-# the value of config_sms_capable
+# the value of TelephonyManager.isDeviceSmsCapable()
 # Indexed by phone ID
 #
 prop {
@@ -325,7 +325,7 @@ prop {
 
 #
 # Set to false to disable SMS sending, default is
-# the value of config_sms_capable
+# the value of TelephonyManager.isDeviceSmsCapable()
 # Indexed by phone ID
 #
 prop {
