@@ -352,10 +352,6 @@ props {
     prop_name: "persist.nfc.debug_enabled"
   }
   prop {
-    api_name: "get_caps_supported"
-    prop_name: "ro.nfc.get_caps_supported"
-  }
-  prop {
     api_name: "info_antpos_X"
     type: IntegerList
     prop_name: "ro.nfc.info.antpos.X"
@@ -380,13 +376,13 @@ props {
     prop_name: "ro.nfc.info.antpos.device_width"
   }
   prop {
+    api_name: "info_observe_mode_supported"
+    prop_name: "ro.nfc.info.observe_mode_supported"
+  }
+  prop {
     api_name: "initialized"
     access: ReadWrite
     prop_name: "nfc.initialized"
-  }
-  prop {
-    api_name: "observe_mode_supported"
-    prop_name: "ro.nfc.observe_mode_supported"
   }
   prop {
     api_name: "skipNdefRead"
