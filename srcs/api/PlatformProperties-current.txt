@@ -16,7 +16,7 @@ props {
   }
   prop {
     api_name: "enable_sniff_offload"
-    prop_name: "bluetooth.sniff_offload.enabled"
+    prop_name: "persist.bluetooth.sniff_offload.enabled"
     integer_as_bool: true
   }
   prop {
@@ -352,9 +352,41 @@ props {
     prop_name: "persist.nfc.debug_enabled"
   }
   prop {
+    api_name: "get_caps_supported"
+    prop_name: "ro.nfc.get_caps_supported"
+  }
+  prop {
+    api_name: "info_antpos_X"
+    type: IntegerList
+    prop_name: "ro.nfc.info.antpos.X"
+  }
+  prop {
+    api_name: "info_antpos_Y"
+    type: IntegerList
+    prop_name: "ro.nfc.info.antpos.Y"
+  }
+  prop {
+    api_name: "info_antpos_device_foldable"
+    prop_name: "ro.nfc.info.antpos.device_foldable"
+  }
+  prop {
+    api_name: "info_antpos_device_height"
+    type: Integer
+    prop_name: "ro.nfc.info.antpos.device_height"
+  }
+  prop {
+    api_name: "info_antpos_device_width"
+    type: Integer
+    prop_name: "ro.nfc.info.antpos.device_width"
+  }
+  prop {
     api_name: "initialized"
     access: ReadWrite
     prop_name: "nfc.initialized"
+  }
+  prop {
+    api_name: "observe_mode_supported"
+    prop_name: "ro.nfc.observe_mode_supported"
   }
   prop {
     api_name: "skipNdefRead"
