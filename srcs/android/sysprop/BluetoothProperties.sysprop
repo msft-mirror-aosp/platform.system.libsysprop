@@ -815,3 +815,12 @@ prop {
     prop_name: "bluetooth.sniff_offload.enabled"
     integer_as_bool: true
 }
+
+# Determines if MSFT HCI ext should be used for LE Scanning
+prop {
+    api_name: "isMsftHciExtEnabled"
+    type: Boolean
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.use_msft_hci_ext"
+}
