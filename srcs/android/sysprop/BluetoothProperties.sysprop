@@ -410,6 +410,16 @@ prop {
     prop_name: "bluetooth.profile.hfp.hf.enabled"
 }
 
+# Whether Bluetooth HFP software datapath is enabled.
+# Set by vendors overlay, read at Bluetooth initialization
+prop {
+    api_name: "isHfpSoftwareDatapathEnabled"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.hfp.software_datapath.enabled"
+}
+
 # Whether the Human Interface Device Profile (HID) device role is enabled on this device.
 # Set by vendors overlay, read at Bluetooth initialization
 prop {
