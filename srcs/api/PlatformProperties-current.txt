@@ -269,6 +269,14 @@ props {
   }
 }
 props {
+  module: "android.sysprop.CriticalIssuesProperties"
+  prop {
+    api_name: "fixed_issues"
+    type: LongList
+    prop_name: "ro.build.critical_issues.fixed_issues.long_list"
+  }
+}
+props {
   owner: Odm
   module: "android.sysprop.DeviceProperties"
   prop {
