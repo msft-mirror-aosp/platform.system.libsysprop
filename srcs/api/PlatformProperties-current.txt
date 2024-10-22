@@ -303,6 +303,10 @@ props {
     enum_values: "aidl|hidl"
   }
   prop {
+    api_name: "codec2_remove_rendering_depth"
+    prop_name: "media.c2.remove_rendering_depth"
+  }
+  prop {
     api_name: "resolution_limit_32bit"
     type: Integer
     prop_name: "media.resolution.limit.32bit"
