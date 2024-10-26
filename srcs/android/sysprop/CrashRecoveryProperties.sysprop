@@ -18,7 +18,7 @@ owner: Platform
 prop {
     api_name: "lastFactoryResetTimeMs"
     type: Long
-    scope: Internal
+    scope: Public
     access: ReadWrite
     prop_name: "persist.crashrecovery.last_factory_reset"
 }
@@ -28,7 +28,7 @@ prop {
 prop {
     api_name: "rescueBootStart"
     type: Long
-    scope: Internal
+    scope: Public
     access: ReadWrite
     prop_name: "crashrecovery.rescue_boot_start"
 }
@@ -36,7 +36,7 @@ prop {
 prop {
     api_name: "rescueBootCount"
     type: Integer
-    scope: Internal
+    scope: Public
     access: ReadWrite
     prop_name: "crashrecovery.rescue_boot_count"
 }
@@ -46,7 +46,7 @@ prop {
 prop {
     api_name: "bootMitigationStart"
     type: Long
-    scope: Internal
+    scope: Public
     access: ReadWrite
     prop_name: "crashrecovery.boot_mitigation_start"
 }
@@ -54,7 +54,7 @@ prop {
 prop {
     api_name: "bootMitigationCount"
     type: Integer
-    scope: Internal
+    scope: Public
     access: ReadWrite
     prop_name: "crashrecovery.boot_mitigation_count"
 }
@@ -62,7 +62,7 @@ prop {
 prop {
     api_name: "attemptingReboot"
     type: Boolean
-    scope: Internal
+    scope: Public
     access: ReadWrite
     prop_name: "crashrecovery.attempting_reboot"
 }
@@ -70,7 +70,7 @@ prop {
 prop {
     api_name: "attemptingFactoryReset"
     type: Boolean
-    scope: Internal
+    scope: Public
     access: ReadWrite
     prop_name: "crashrecovery.attempting_factory_reset"
 }
@@ -78,7 +78,7 @@ prop {
 prop {
     api_name: "maxRescueLevelAttempted"
     type: Integer
-    scope: Internal
+    scope: Public
     access: ReadWrite
     prop_name: "crashrecovery.max_rescue_level_attempted"
 }
@@ -86,7 +86,7 @@ prop {
 prop {
     api_name: "enableRescueParty"
     type: Boolean
-    scope: Internal
+    scope: Public
     access: ReadWrite
     prop_name: "persist.crashrecovery.enable_rescue"
 }

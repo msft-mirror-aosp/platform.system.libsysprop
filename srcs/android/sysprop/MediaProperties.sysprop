@@ -57,3 +57,10 @@ prop {
     scope: Public
     prop_name: "media.c2.hal.selection"
 }
+prop {
+    api_name: "codec2_remove_rendering_depth"
+    type: Boolean
+    access: Readonly
+    scope: Public
+    prop_name: "media.c2.remove_rendering_depth"
+}
