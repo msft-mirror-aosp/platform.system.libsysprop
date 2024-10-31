@@ -1,0 +1,12 @@
+module: "android.sysprop.CriticalIssuesProperties"
+owner: Platform
+
+# List of fixed issues tested by CTS.
+prop {
+    api_name: "fixed_issues"
+    type: LongList
+    scope: Public
+    access: Readonly
+    prop_name: "ro.build.critical_issues.fixed_issues.long_list"
+}
+
