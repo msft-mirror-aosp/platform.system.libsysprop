@@ -83,6 +83,10 @@ props {
     prop_name: "bluetooth.core.gap.le.privacy.enabled"
   }
   prop {
+    api_name: "isHfpSoftwareDatapathEnabled"
+    prop_name: "bluetooth.hfp.software_datapath.enabled"
+  }
+  prop {
     api_name: "isLeAudioCodecExtensionAidlEnabled"
     prop_name: "bluetooth.core.le_audio.codec_extension_aidl.enabled"
   }
@@ -265,6 +269,68 @@ props {
   }
 }
 props {
+  module: "android.sysprop.CrashRecoveryProperties"
+  prop {
+    api_name: "attemptingFactoryReset"
+    access: ReadWrite
+    prop_name: "crashrecovery.attempting_factory_reset"
+  }
+  prop {
+    api_name: "attemptingReboot"
+    access: ReadWrite
+    prop_name: "crashrecovery.attempting_reboot"
+  }
+  prop {
+    api_name: "bootMitigationCount"
+    type: Integer
+    access: ReadWrite
+    prop_name: "crashrecovery.boot_mitigation_count"
+  }
+  prop {
+    api_name: "bootMitigationStart"
+    type: Long
+    access: ReadWrite
+    prop_name: "crashrecovery.boot_mitigation_start"
+  }
+  prop {
+    api_name: "enableRescueParty"
+    access: ReadWrite
+    prop_name: "persist.crashrecovery.enable_rescue"
+  }
+  prop {
+    api_name: "lastFactoryResetTimeMs"
+    type: Long
+    access: ReadWrite
+    prop_name: "persist.crashrecovery.last_factory_reset"
+  }
+  prop {
+    api_name: "maxRescueLevelAttempted"
+    type: Integer
+    access: ReadWrite
+    prop_name: "crashrecovery.max_rescue_level_attempted"
+  }
+  prop {
+    api_name: "rescueBootCount"
+    type: Integer
+    access: ReadWrite
+    prop_name: "crashrecovery.rescue_boot_count"
+  }
+  prop {
+    api_name: "rescueBootStart"
+    type: Long
+    access: ReadWrite
+    prop_name: "crashrecovery.rescue_boot_start"
+  }
+}
+props {
+  module: "android.sysprop.CriticalIssuesProperties"
+  prop {
+    api_name: "fixed_issues"
+    type: LongList
+    prop_name: "ro.build.critical_issues.fixed_issues.long_list"
+  }
+}
+props {
   owner: Odm
   module: "android.sysprop.DeviceProperties"
   prop {
@@ -301,6 +367,10 @@ props {
     type: Enum
     prop_name: "media.c2.hal.selection"
     enum_values: "aidl|hidl"
+  }
+  prop {
+    api_name: "codec2_remove_rendering_depth"
+    prop_name: "media.c2.remove_rendering_depth"
   }
   prop {
     api_name: "resolution_limit_32bit"
