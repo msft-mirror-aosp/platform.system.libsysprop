@@ -380,6 +380,16 @@ prop {
     prop_name: "bluetooth.profile.gatt.enabled"
 }
 
+# Whether the Gaming Audio profile (GMAP) is enabled on this device.
+# Set by vendors overlay, read at Bluetooth initialization
+prop {
+    api_name: "isProfileGmapEnabled"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "bluetooth.profile.gmap.enabled"
+}
+
 # Whether the Hearing Aid Profile (HAP) client role is enabled on this device.
 # Set by vendors overlay, read at Bluetooth initialization
 prop {
