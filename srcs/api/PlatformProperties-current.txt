@@ -8,6 +8,14 @@ props {
   }
 }
 props {
+  module: "android.sysprop.BackportedFixesProperties"
+  prop {
+    api_name: "alias_bitset"
+    type: LongList
+    prop_name: "ro.build.backported_fixes.alias_bitset.long_list"
+  }
+}
+props {
   module: "android.sysprop.BluetoothProperties"
   prop {
     api_name: "dsa_transport_preference"
@@ -270,14 +278,6 @@ props {
     access: ReadWrite
     prop_name: "persist.bluetooth.btsnooplogmode"
     enum_values: "empty|disabled|filtered|full"
-  }
-}
-props {
-  module: "android.sysprop.CriticalIssuesProperties"
-  prop {
-    api_name: "fixed_issues"
-    type: LongList
-    prop_name: "ro.build.critical_issues.fixed_issues.long_list"
   }
 }
 props {
