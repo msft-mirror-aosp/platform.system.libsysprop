@@ -832,7 +832,7 @@ prop {
     type: Boolean
     scope: Public
     access: Readonly
-    prop_name: "bluetooth.sniff_offload.enabled"
+    prop_name: "persist.bluetooth.sniff_offload.enabled"
     integer_as_bool: true
 }
 
