@@ -8,6 +8,14 @@ props {
   }
 }
 props {
+  module: "android.sysprop.BackportedFixesProperties"
+  prop {
+    api_name: "alias_bitset"
+    type: LongList
+    prop_name: "ro.build.backported_fixes.alias_bitset.long_list"
+  }
+}
+props {
   module: "android.sysprop.BluetoothProperties"
   prop {
     api_name: "dsa_transport_preference"
@@ -145,6 +153,10 @@ props {
   prop {
     api_name: "isProfileGattEnabled"
     prop_name: "bluetooth.profile.gatt.enabled"
+  }
+  prop {
+    api_name: "isProfileGmapEnabled"
+    prop_name: "bluetooth.profile.gmap.enabled"
   }
   prop {
     api_name: "isProfileHapClientEnabled"
@@ -320,14 +332,6 @@ props {
     type: Long
     access: ReadWrite
     prop_name: "crashrecovery.rescue_boot_start"
-  }
-}
-props {
-  module: "android.sysprop.CriticalIssuesProperties"
-  prop {
-    api_name: "fixed_issues"
-    type: LongList
-    prop_name: "ro.build.critical_issues.fixed_issues.long_list"
   }
 }
 props {
