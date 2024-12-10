@@ -33,16 +33,6 @@ prop {
     prop_name: "persist.input.enable_motion_prediction"
 }
 
-# A flag to enable the new Keyboard backlight controller introduced in Android U, that allows
-# Framework to control keyboard backlight on supported devices.
-prop {
-    api_name: "enable_keyboard_backlight_control"
-    type: Boolean
-    scope: Internal
-    access: Readonly
-    prop_name: "persist.input.keyboard.backlight_control.enabled"
-}
-
 # A flag to force showing a pointer icon for stylus pointers, even when the device is not
 # configured for it. Used for debugging stylus pointer icons. Requires restart.
 prop {
@@ -71,22 +61,3 @@ prop {
     prop_name: "persist.debug.input.enable_input_device_usage_metrics"
 }
 
-# A flag to enable the Custom levels provided via IDC files for Keyboard backlight
-# introduced in Android U-QPR1.
-prop {
-    api_name: "enable_keyboard_backlight_custom_levels"
-    type: Boolean
-    scope: Internal
-    access: Readonly
-    prop_name: "persist.input.keyboard.backlight_custom_levels.enabled"
-}
-
-
-# A flag to enable ALS based keyboard backlight control introduced in Android U-QPR1.
-prop {
-    api_name: "enable_ambient_keyboard_backlight_control"
-    type: Boolean
-    scope: Internal
-    access: Readonly
-    prop_name: "persist.input.keyboard.ambient_backlight_control.enabled"
-}
