@@ -707,6 +707,36 @@ prop {
     prop_name: "bluetooth.core.le.connection_supervision_timeout"
 }
 
+# LE connection intervals which replace the above (min/max)_connection_interval
+prop {
+    api_name: "getLeMinConnectionIntervalRelaxed"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.min_connection_interval_relaxed"
+}
+prop {
+    api_name: "getLeMaxConnectionIntervalRelaxed"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.max_connection_interval_relaxed"
+}
+prop {
+    api_name: "getLeMinConnectionIntervalAggressive"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.min_connection_interval_aggressive"
+}
+prop {
+    api_name: "getLeMaxConnectionIntervalAggressive"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.max_connection_interval_aggressive"
+}
+
 # Direct connection timeout in ms
 prop {
     api_name: "getLeDirectConnectionTimeout"
