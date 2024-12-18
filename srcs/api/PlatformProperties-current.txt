@@ -8,6 +8,14 @@ props {
   }
 }
 props {
+  module: "android.sysprop.BackportedFixesProperties"
+  prop {
+    api_name: "alias_bitset"
+    type: LongList
+    prop_name: "ro.build.backported_fixes.alias_bitset.long_list"
+  }
+}
+props {
   module: "android.sysprop.BluetoothProperties"
   prop {
     api_name: "dsa_transport_preference"
@@ -16,7 +24,7 @@ props {
   }
   prop {
     api_name: "enable_sniff_offload"
-    prop_name: "bluetooth.sniff_offload.enabled"
+    prop_name: "persist.bluetooth.sniff_offload.enabled"
     integer_as_bool: true
   }
   prop {
@@ -83,6 +91,10 @@ props {
     prop_name: "bluetooth.core.gap.le.privacy.enabled"
   }
   prop {
+    api_name: "isHfpSoftwareDatapathEnabled"
+    prop_name: "bluetooth.hfp.software_datapath.enabled"
+  }
+  prop {
     api_name: "isLeAudioCodecExtensionAidlEnabled"
     prop_name: "bluetooth.core.le_audio.codec_extension_aidl.enabled"
   }
@@ -141,6 +153,10 @@ props {
   prop {
     api_name: "isProfileGattEnabled"
     prop_name: "bluetooth.profile.gatt.enabled"
+  }
+  prop {
+    api_name: "isProfileGmapEnabled"
+    prop_name: "bluetooth.profile.gmap.enabled"
   }
   prop {
     api_name: "isProfileHapClientEnabled"
@@ -303,6 +319,10 @@ props {
     enum_values: "aidl|hidl"
   }
   prop {
+    api_name: "codec2_remove_rendering_depth"
+    prop_name: "media.c2.remove_rendering_depth"
+  }
+  prop {
     api_name: "resolution_limit_32bit"
     type: Integer
     prop_name: "media.resolution.limit.32bit"
@@ -352,6 +372,10 @@ props {
     prop_name: "persist.nfc.debug_enabled"
   }
   prop {
+    api_name: "get_caps_supported"
+    prop_name: "ro.nfc.get_caps_supported"
+  }
+  prop {
     api_name: "info_antpos_X"
     type: IntegerList
     prop_name: "ro.nfc.info.antpos.X"
@@ -376,13 +400,13 @@ props {
     prop_name: "ro.nfc.info.antpos.device_width"
   }
   prop {
-    api_name: "info_observe_mode_supported"
-    prop_name: "ro.nfc.info.observe_mode_supported"
-  }
-  prop {
     api_name: "initialized"
     access: ReadWrite
     prop_name: "nfc.initialized"
+  }
+  prop {
+    api_name: "observe_mode_supported"
+    prop_name: "ro.nfc.observe_mode_supported"
   }
   prop {
     api_name: "skipNdefRead"
