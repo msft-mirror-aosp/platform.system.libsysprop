@@ -736,6 +736,13 @@ prop {
     access: Readonly
     prop_name: "bluetooth.core.le.max_connection_interval_aggressive"
 }
+prop {
+    api_name: "getLeAggressiveConnectionThreshold"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.aggressive_connection_threshold"
+}
 
 # Direct connection timeout in ms
 prop {
@@ -862,7 +869,7 @@ prop {
     type: Boolean
     scope: Public
     access: Readonly
-    prop_name: "bluetooth.sniff_offload.enabled"
+    prop_name: "persist.bluetooth.sniff_offload.enabled"
     integer_as_bool: true
 }
 
