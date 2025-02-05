@@ -881,3 +881,12 @@ prop {
     access: Readonly
     prop_name: "bluetooth.core.le.use_msft_hci_ext"
 }
+
+# MSFT HCI ext vendor opcode
+prop {
+    api_name: "getMsftVendorOpcode"
+    type: UInt
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.core.le.msft_vendor_opcode"
+}
