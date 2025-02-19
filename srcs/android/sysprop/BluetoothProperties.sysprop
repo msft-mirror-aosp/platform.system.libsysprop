@@ -888,5 +888,5 @@ prop {
     type: UInt
     scope: Internal
     access: Readonly
-    prop_name: "bluetooth.core.le.msft_vendor_opcode"
+    prop_name: "bluetooth.hci.msft_vendor_opcode"
 }
