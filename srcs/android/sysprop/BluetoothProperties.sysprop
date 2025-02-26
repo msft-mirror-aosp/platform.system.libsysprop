@@ -105,6 +105,18 @@ prop {
     prop_name: "persist.bluetooth.leaudio.allow_list"
 }
 
+# LE audio modes
+# - "disabled"  - All LE audio feature off.
+# - "unicast"   - Unicast enabled only.
+# - "broadcast" - Unicast + broadcast enabled.
+prop {
+    api_name: "le_audio_dynamic_switcher_mode"
+    type: String
+    scope: Internal
+    access: ReadWrite
+    prop_name: "persist.bluetooth.leaudio_dynamic_switcher.mode"
+}
+
 ######## Bluetooth configurations
 
 # Whether GAP BLE Privacy (RPA) is enabled on this device.
@@ -888,5 +900,5 @@ prop {
     type: UInt
     scope: Internal
     access: Readonly
-    prop_name: "bluetooth.core.le.msft_vendor_opcode"
+    prop_name: "bluetooth.hci.msft_vendor_opcode"
 }
