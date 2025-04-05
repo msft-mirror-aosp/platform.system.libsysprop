@@ -417,6 +417,12 @@ props {
     prop_name: "persist.nfc.debug_enabled"
   }
   prop {
+    api_name: "fw_version"
+    type: String
+    prop_name: "ro.nfc.fw.ver"
+    legacy_prop_name: "nfc.fw.ver"
+  }
+  prop {
     api_name: "get_caps_supported"
     prop_name: "ro.nfc.get_caps_supported"
   }

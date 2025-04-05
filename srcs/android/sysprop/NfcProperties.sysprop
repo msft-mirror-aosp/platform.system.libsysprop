@@ -112,3 +112,12 @@ prop {
     access: Readonly
     prop_name: "ro.nfc.get_caps_supported"
 }
+
+prop {
+    api_name: "fw_version"
+    type: String
+    scope: Public
+    access: Readonly
+    prop_name: "ro.nfc.fw.ver"
+    legacy_prop_name: "nfc.fw.ver"
+}
