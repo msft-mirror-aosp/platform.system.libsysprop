@@ -117,6 +117,15 @@ prop {
     prop_name: "persist.bluetooth.leaudio_dynamic_switcher.mode"
 }
 
+# Used to disable the HID device role at runtime
+prop {
+    api_name: "isProfileHidDeviceRuntimeDisabled"
+    type: Boolean
+    scope: Public
+    access: ReadWrite
+    prop_name: "persist.bluetooth.hid.device.disabled"
+}
+
 ######## Bluetooth configurations
 
 # Whether GAP BLE Privacy (RPA) is enabled on this device.

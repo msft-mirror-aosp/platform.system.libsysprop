@@ -166,6 +166,11 @@ props {
     prop_name: "bluetooth.profile.hid.device.enabled"
   }
   prop {
+    api_name: "isProfileHidDeviceRuntimeDisabled"
+    access: ReadWrite
+    prop_name: "persist.bluetooth.hid.device.disabled"
+  }
+  prop {
     api_name: "isProfileHidHostEnabled"
     prop_name: "bluetooth.profile.hid.host.enabled"
   }
