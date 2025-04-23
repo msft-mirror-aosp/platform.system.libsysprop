@@ -448,7 +448,7 @@ prop {
     api_name: "isProfileHidDeviceEnabled"
     type: Boolean
     scope: Public
-    access: ReadWrite
+    access: Readonly
     prop_name: "bluetooth.profile.hid.device.enabled"
 }
 
