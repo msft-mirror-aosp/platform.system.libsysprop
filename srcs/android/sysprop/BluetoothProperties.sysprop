@@ -765,84 +765,6 @@ prop {
     prop_name: "bluetooth.core.le.aggressive_connection_threshold"
 }
 
-# Direct connection timeout in ms
-prop {
-    api_name: "getLeDirectConnectionTimeout"
-    type: UInt
-    scope: Internal
-    access: Readonly
-    prop_name: "bluetooth.core.le.direct_connection_timeout"
-}
-
-# LE connection scan interval/window
-prop {
-    api_name: "getLeConnectionScanIntervalFast"
-    type: UInt
-    scope: Internal
-    access: Readonly
-    prop_name: "bluetooth.core.le.connection_scan_interval_fast"
-}
-prop {
-    api_name: "getLeConnectionScanWindowFast"
-    type: UInt
-    scope: Internal
-    access: Readonly
-    prop_name: "bluetooth.core.le.connection_scan_window_fast"
-}
-prop {
-    api_name: "getLeConnectionScanWindow2mFast"
-    type: UInt
-    scope: Internal
-    access: Readonly
-    prop_name: "bluetooth.core.le.connection_scan_window_2m_fast"
-}
-prop {
-    api_name: "getLeConnectionScanWindowCodedFast"
-    type: UInt
-    scope: Internal
-    access: Readonly
-    prop_name: "bluetooth.core.le.connection_scan_window_coded_fast"
-}
-prop {
-    api_name: "getLeConnectionScanIntervalSlow"
-    type: UInt
-    scope: Internal
-    access: Readonly
-    prop_name: "bluetooth.core.le.connection_scan_interval_slow"
-}
-prop {
-    api_name: "getLeConnectionScanWindowSlow"
-    type: UInt
-    scope: Internal
-    access: Readonly
-    prop_name: "bluetooth.core.le.connection_scan_window_slow"
-}
-
-# LE scanning parameters used during BTM inquiry
-prop {
-    api_name: "getLeInquiryScanInterval"
-    type: UInt
-    scope: Internal
-    access: Readonly
-    prop_name: "bluetooth.core.le.inquiry_scan_interval"
-}
-prop {
-    api_name: "getLeInquiryScanWindow"
-    type: UInt
-    scope: Internal
-    access: Readonly
-    prop_name: "bluetooth.core.le.inquiry_scan_window"
-}
-
-# Used to disable LeGetVendorCapabilities.
-prop {
-    api_name: "getLeVendorCapabilitiesEnabled"
-    type: Boolean
-    scope: Internal
-    access: Readonly
-    prop_name: "bluetooth.core.le.vendor_capabilities.enabled"
-}
-
 # Maximum number of number of allowed concurrent LE Connections
 prop {
     api_name: "getLeMaxNumberOfConcurrentConnections"
@@ -865,15 +787,6 @@ prop {
     prop_name: "bluetooth.core.le.dsa_transport_preference"
 }
 
-# Used to disable enhanced SCO connection
-prop {
-    api_name: "getDisableEnchancedConnection"
-    type: Boolean
-    scope: Internal
-    access: Readonly
-    prop_name: "bluetooth.sco.disable_enhanced_connection"
-}
-
 # Whether Bluetooth HFP SCO managed by Audio.
 # Set by vendors overlay, read at Bluetooth initialization
 prop {
@@ -892,22 +805,4 @@ prop {
     access: Readonly
     prop_name: "persist.bluetooth.sniff_offload.enabled"
     integer_as_bool: true
-}
-
-# Determines if MSFT HCI ext should be used for LE Scanning
-prop {
-    api_name: "isMsftHciExtEnabled"
-    type: Boolean
-    scope: Internal
-    access: Readonly
-    prop_name: "bluetooth.core.le.use_msft_hci_ext"
-}
-
-# MSFT HCI ext vendor opcode
-prop {
-    api_name: "getMsftVendorOpcode"
-    type: UInt
-    scope: Internal
-    access: Readonly
-    prop_name: "bluetooth.hci.msft_vendor_opcode"
 }
