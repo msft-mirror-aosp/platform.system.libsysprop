@@ -120,3 +120,11 @@ prop {
     access: ReadWrite
     prop_name: "nfc.fw.ver"
 }
+
+prop {
+    api_name: "verbose_debug_enabled"
+    type: Boolean
+    scope: Public
+    access: ReadWrite
+    prop_name: "persist.nfc.verbose_debug_enabled"
+}
