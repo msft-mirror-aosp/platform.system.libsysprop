@@ -481,6 +481,11 @@ props {
     access: ReadWrite
     prop_name: "persist.nfc.vendor_debug_enabled"
   }
+  prop {
+    api_name: "verbose_debug_enabled"
+    access: ReadWrite
+    prop_name: "persist.nfc.verbose_debug_enabled"
+  }
 }
 props {
   module: "android.sysprop.OtaProperties"
