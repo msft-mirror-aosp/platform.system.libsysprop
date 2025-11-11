@@ -581,6 +581,16 @@ prop {
     prop_name: "bluetooth.profile.vcp.controller.enabled"
 }
 
+# Whether the Voice Assistant Profile (VAP) server role is enabled on this device.
+# Set by vendors overlay, read at Bluetooth initialization
+prop {
+    api_name: "isProfileVapServerEnabled"
+    type: Boolean
+    scope: Internal
+    access: Readonly
+    prop_name: "bluetooth.profile.vap.server.enabled"
+}
+
 # BR/EDR Sniff Parameters
 # Please refer to BTA_DM_PM_PARK_IDX in bta_api.h to determine how many
 # entries are currently being supported.
