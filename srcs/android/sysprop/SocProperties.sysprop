@@ -32,3 +32,12 @@ prop {
     access: Readonly
     prop_name: "ro.soc.model"
 }
+
+# Whether or not a soc is in essential-tier
+prop {
+    api_name: "soc_et"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "ro.soc.et"
+}

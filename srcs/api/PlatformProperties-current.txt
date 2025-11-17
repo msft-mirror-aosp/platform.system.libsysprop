@@ -520,6 +520,10 @@ props {
 props {
   module: "android.sysprop.SocProperties"
   prop {
+    api_name: "soc_et"
+    prop_name: "ro.soc.et"
+  }
+  prop {
     api_name: "soc_manufacturer"
     type: String
     prop_name: "ro.soc.manufacturer"
