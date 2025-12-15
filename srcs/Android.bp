@@ -35,6 +35,7 @@ sysprop_library {
         "com.android.tethering",
         "com.android.virt",
         "com.android.wifi",
+        "com.android.telephonycore",
     ],
     cpp: {
         min_sdk_version: "S",
