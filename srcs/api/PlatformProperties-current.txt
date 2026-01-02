@@ -610,6 +610,16 @@ props {
   }
 }
 props {
+  module: "android.sysprop.ThermalDynamicProperties"
+  prop {
+    api_name: "reload_thermal_dynamic_config_profile"
+    type: Enum
+    access: ReadWrite
+    prop_name: "thermal.dynamic_config_profile"
+    enum_values: "default|setup|kids_setup|kids"
+  }
+}
+props {
   module: "android.sysprop.ThreadNetworkProperties"
   prop {
     api_name: "country_code"
