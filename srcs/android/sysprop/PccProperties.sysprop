@@ -15,6 +15,8 @@
 owner: Platform
 module: "android.sysprop.PccProperties"
 
+# For system_server only
+
 prop {
     api_name: "audit_mode_enabled"
     prop_name: "persist.pcc.audit_mode.enabled"
@@ -39,3 +41,28 @@ prop {
     access: ReadWrite
 }
 
+# Client properties, readable by 3p apps (e.g. Cronet, libbinder)
+
+prop {
+    api_name: "audit_mode_batching_enabled"
+    prop_name: "persist.pcc.audit_mode.batching.enabled"
+    type: Boolean
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "audit_mode_max_batch_size"
+    prop_name: "persist.pcc.audit_mode.batching.max_batch_size"
+    type: Integer
+    scope: Public
+    access: ReadWrite
+}
+
+prop {
+    api_name: "audit_mode_flush_time_ms"
+    prop_name: "persist.pcc.audit_mode.batching.flush_time_ms"
+    type: Integer
+    scope: Public
+    access: ReadWrite
+}
