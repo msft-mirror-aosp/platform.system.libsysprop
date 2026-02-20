@@ -22,3 +22,11 @@ prop {
     access: ReadWrite
     prop_name: "persist.drm.forcel3.enabled"
 }
+
+prop {
+    api_name: "multi_binder_enabled"
+    type: Boolean
+    scope: Public
+    access: Readonly
+    prop_name: "drm.multi_binder.enabled"
+}
