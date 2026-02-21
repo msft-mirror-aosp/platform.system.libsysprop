@@ -667,6 +667,10 @@ props {
     access: ReadWrite
     prop_name: "persist.drm.forcel3.enabled"
   }
+  prop {
+    api_name: "multi_binder_enabled"
+    prop_name: "drm.multi_binder.enabled"
+  }
 }
 props {
   module: "android.sysprop.WifiProperties"
